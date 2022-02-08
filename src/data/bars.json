@@ -1,0 +1,242 @@
+[
+    {
+      "Name": "440 Castro",
+      "Street Address": "440 Castro St.",
+      "Latitude": 37.76965,
+      "Longitude": 122.43614,
+      "Neighborhood": "Castro",
+      "Website URL": "http://www.the440.com/"
+    },
+    {
+      "Name": "Twin Peaks",
+      "Street Address": "401 Castro St, San Francisco, CA 94114",
+      "Latitude": 37.76227,
+      "Longitude": -122.43495,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.twinpeakstavern.com/"
+    },
+    {
+      "Name": "The Mix",
+      "Street Address": "4086 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76115,
+      "Longitude": -122.43449,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.thesfmix.com/"
+    },
+    {
+      "Name": "Midnight Sun",
+      "Street Address": "4067 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76071,
+      "Longitude": -122.43427,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.midnightsunsf.com/"
+    },
+    {
+      "Name": "Moby Dick",
+      "Street Address": "4049 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76077,
+      "Longitude": -122.43373,
+      "Neighborhood": "Castro",
+      "Website URL": "https://twitter.com/mobydicksf?lang=en"
+    },
+    {
+      "Name": "Last Call",
+      "Street Address": "3988 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76107,
+      "Longitude": -122.43255,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.thelastcallbar.com/"
+    },
+    {
+      "Name": "The Edge",
+      "Street Address": "4149 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76081,
+      "Longitude": -122.43573,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.facebook.com/EdgeSF/"
+    },
+    {
+      "Name": "Toad Hall",
+      "Street Address": "4146 18th St, San Francisco, CA 94114",
+      "Latitude": 37.76089,
+      "Longitude": -122.43575,
+      "Neighborhood": "Castro",
+      "Website URL": "http://toadhallbar.com/"
+    },
+    {
+      "Name": "Beaux",
+      "Street Address": "2344 Market St, San Francisco, CA 94114",
+      "Latitude": 37.751362,
+      "Longitude": -122.442963,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.beauxsf.com/"
+    },
+    {
+      "Name": "The Cafe",
+      "Street Address": "2369 Market St, San Francisco, CA 94114",
+      "Latitude": 37.762959,
+      "Longitude": -122.434509,
+      "Neighborhood": "Castro",
+      "Website URL": "https://cafesf.com/"
+    },
+    {
+      "Name": "Hi Tops",
+      "Street Address": "2247 Market St, San Francisco, CA 94114",
+      "Latitude": 37.751362,
+      "Longitude": -122.442963,
+      "Neighborhood": "Castro",
+      "Website URL": "https://www.hitopsbar.com/hi-tops-sf"
+    },
+    {
+      "Name": "Lookout",
+      "Street Address": "3600 16th St, San Francisco, CA 94114",
+      "Latitude": 37.764359,
+      "Longitude": -122.43338,
+      "Neighborhood": "Castro",
+      "Website URL": "(check for website later) https://m.facebook.com/profile.php?id=311959905596956&__tn__=C-R"
+    },
+    {
+      "Name": "Pilsner Inn",
+      "Street Address": "225 Church St, San Francisco, CA 94114",
+      "Latitude": 37.76707,
+      "Longitude": -122.42879,
+      "Neighborhood": "Castro",
+      "Website URL": "http://www.pilsnerinn.com/"
+    },
+    {
+      "Name": "Oasis",
+      "Street Address": "298 11th St, San Francisco, CA 94103",
+      "Latitude": 37.771889,
+      "Longitude": -122.414391,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://www.sfoasis.com/"
+    },
+    {
+      "Name": "SF Eagle",
+      "Street Address": "398 12th St, San Francisco, CA 94103",
+      "Latitude": 37.77007,
+      "Longitude": -122.41317,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://thesfeagle.com/?v=7516fd43adaa"
+    },
+    {
+      "Name": "Lone Star Saloon",
+      "Street Address": "1354 Harrison St, San Francisco, CA 94103",
+      "Latitude": 37.77204,
+      "Longitude": -122.41077,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://www.lonestarsf.com/"
+    },
+    {
+      "Name": "Hole in the Wall Saloon",
+      "Street Address": "1369 Folsom St, San Francisco, CA 94103",
+      "Latitude": 37.7729,
+      "Longitude": -122.41228,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://www.facebook.com/groups/HITWSfans/"
+    },
+    {
+      "Name": "Powerhouse",
+      "Street Address": "1347 Folsom St, San Francisco, CA 94103",
+      "Latitude": 37.77304,
+      "Longitude": -122.41209,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://www.powerhousebar.com/"
+    },
+    {
+      "Name": "Asia SF",
+      "Street Address": "201 9th St, San Francisco, CA 94103",
+      "Latitude": 37.77497,
+      "Longitude": -122.41283,
+      "Neighborhood": "SoMa",
+      "Website URL": "https://sf.asiasf.com/"
+    },
+    {
+      "Name": "Club OMG",
+      "Street Address": "43 6th St, San Francisco, CA 94103",
+      "Latitude": 37.78176,
+      "Longitude": -122.40931,
+      "Neighborhood": "SoMa",
+      "Website URL": "http://www.clubomgsf.com/"
+    },
+    {
+      "Name": "Aunt Charlie's Lounge",
+      "Street Address": "133 Turk St, San Francisco, CA 94102",
+      "Latitude": 37.78285,
+      "Longitude": -122.41138,
+      "Neighborhood": "North of Market",
+      "Website URL": "https://www.auntcharlieslounge.com/"
+    },
+    {
+      "Name": "The Cinch Saloon",
+      "Street Address": "1723 Polk St, San Francisco, CA 94109",
+      "Latitude": 37.79273,
+      "Longitude": -122.42146,
+      "Neighborhood": "North of Market",
+      "Website URL": "https://www.facebook.com/thecinchsaloon"
+    },
+    {
+      "Name": "Ginger's",
+      "Street Address": "86 Hardie Pl, San Francisco, CA 94108",
+      "Latitude": 37.790379,
+      "Longitude": -122.403397,
+      "Neighborhood": "North of Market",
+      "Website URL": "https://www.gingers.bar/"
+    },
+    {
+      "Name": "Trax",
+      "Street Address": "1437 Haight St, San Francisco, CA 94117",
+      "Latitude": 37.76983,
+      "Longitude": -122.44607,
+      "Neighborhood": "North of Market",
+      "Website URL": "https://traxbarsf.com/"
+    },
+    {
+      "Name": "Phone Booth",
+      "Street Address": "1398 S Van Ness Ave, San Francisco, CA 94110",
+      "Latitude": 37.75087,
+      "Longitude": -122.41646,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://www.yelp.com/biz/phone-booth-san-francisco"
+    },
+    {
+      "Name": "El Rio",
+      "Street Address": "3158 Mission St, San Francisco, CA 94110",
+      "Latitude": 37.746849,
+      "Longitude": -122.41951,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://www.elriosf.com/"
+    },
+    {
+      "Name": "Martuni's",
+      "Street Address": "4 Valencia St, San Francisco, CA 94103",
+      "Latitude": 37.77236,
+      "Longitude": -122.42268,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://www.facebook.com/Martunis-994554857261865/"
+    },
+    {
+      "Name": "Jolene's Bar",
+      "Street Address": "2700 16th St, San Francisco, CA 94103",
+      "Latitude": 37.76545,
+      "Longitude": -122.41367,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://www.jolenessf.com/index.html"
+    },
+    {
+      "Name": "Wild Side West",
+      "Street Address": "424 Cortland Ave, San Francisco, CA 94110",
+      "Latitude": 37.73889,
+      "Longitude": -122.41717,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://www.wildsidewest.com/"
+    },
+    {
+      "Name": "The Mint",
+      "Street Address": "1942 Market St, San Francisco, CA 94102",
+      "Latitude": 37.77033,
+      "Longitude": -122.42584,
+      "Neighborhood": "The Mission",
+      "Website URL": "https://themint.net/"
+    }
+  ]
