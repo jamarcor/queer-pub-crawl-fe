@@ -25,3 +25,10 @@
 .App-link {
   color: #09d3ac;
 }
+
+#map { height: 180px; }
+
+.leaflet-container {
+  width: 100vw;
+  height: 50vh;
+}

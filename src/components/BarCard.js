@@ -13,6 +13,8 @@ export default function BarCard({ bar }) {
         <Card.Body>
           <Card.Title>{bar.name}</Card.Title>
           <Card.Text>{bar.street_address}</Card.Text>
+          <Card.Text>{bar.description}</Card.Text>
+          <Card.Text>{bar.neighborhood.name}</Card.Text>
         </Card.Body>
       </Card>
     </>

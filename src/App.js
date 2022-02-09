@@ -1,15 +1,40 @@
 // import React, { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import { useEffect } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Bars from "./pages/Bars"
+// import Bars from "./pages/Bars"
 import BarList from "./components/BarList";
-import "./style/App.css";
+import "./App.css";
 // import Header from "./components/Header";
-// import SignInForm from "./User/SignInForm";
-// import LoginForm from "./User/LoginForm";
+import SignInForm from "./User/SignInForm";
+import LoginForm from "./User/LoginForm";
+const url = "http://localhost:3000/";
+
 
 function App() {
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log("my token is: ", token);
+    console.log("api endpoint url: ", url);
+    if (token) {
+      fetch(`${url}/auto_login`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          // setCurrentUser(data);
+          console.log("data returned from auto_login: ", data);
+        });
+    }
+  }, []);
+  
+
+
   return (
     <>
       <Header />
@@ -21,7 +46,21 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/bars" element={<BarList />} />
       </Routes>
+      <MapContainer center={[51.505, -0.09]} zoom={13}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={[51.505, -0.09]}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
+      <SignInForm />
+      <LoginForm />
     </>
+  
   );
 }
 
@@ -75,4 +114,3 @@ export default App;
 //     </div>
 //   );
 // }
-

@@ -25,7 +25,7 @@ import Container from "react-bootstrap/Container";
           bars.map(bar => {
             return (
               <>
-            <BarCard bar={bar} />
+            <BarCard key={bar.bar_id} bar={bar} neighborhood={bar.neighborhood.name} />
             </>
             )
           })
