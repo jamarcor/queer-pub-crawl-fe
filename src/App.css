@@ -32,3 +32,17 @@
   width: 100vw;
   height: 50vh;
 }
+
+#signup-form {
+  padding-top: 75px;
+  margin-bottom: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#login-form {
+  padding-top: 75px;
+  margin-bottom: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+}

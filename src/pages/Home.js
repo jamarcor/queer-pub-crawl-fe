@@ -2,32 +2,41 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../App.css";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 export default function Home() {
   return (
     <div>
-      <Form>
-        <Form.Group className="mb-3" controlId="neighborhoodSelector">
-          <Form.Label>Neighborhood Select</Form.Label>
-          <Form.Select defaultValue="Neighborhood">
-            <option>Castro</option>
-            <option>SoMa</option>
-            <option>The Mission</option>
-            <option>North of Market</option>
-            <option>All</option>
-          </Form.Select>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Dance" />
-          <Form.Check type="checkbox" label="Dive" />
-          <Form.Check type="checkbox" label="Inclusive" />
-          <Form.Check type="checkbox" label="Dark room" />
-          <Form.Check type="checkbox" label="Patio" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <Container>
+        <Form>
+          <Form.Group className="mb-3" controlId="neighborhoodSelector">
+            <Row>
+              <Form.Label>Neighborhood Select</Form.Label>
+              <Form.Select defaultValue="Neighborhood">
+                <option>Castro</option>
+                <option>SoMa</option>
+                <option>The Mission</option>
+                <option>North of Market</option>
+                <option>All</option>
+              </Form.Select>
+            </Row>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Row>
+              <Col md="auto"><Form.Check type="checkbox" label="Dance" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Dive" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Inclusive" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Dark room" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Patio" /></Col>
+            </Row>
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      </Container>
     </div>
   );
 }

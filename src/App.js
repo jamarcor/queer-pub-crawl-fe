@@ -1,19 +1,18 @@
 // import React, { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-// import Bars from "./pages/Bars"
 import BarList from "./components/BarList";
 import "./App.css";
-// import Header from "./components/Header";
-import SignInForm from "./User/SignInForm";
+import SignInForm from "./User/SignUpForm";
 import LoginForm from "./User/LoginForm";
 const url = "http://localhost:3000/";
 
 
 function App() {
+  const [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -27,7 +26,7 @@ function App() {
       })
         .then((resp) => resp.json())
         .then((data) => {
-          // setCurrentUser(data);
+          setCurrentUser(data);
           console.log("data returned from auto_login: ", data);
         });
     }
@@ -38,11 +37,8 @@ function App() {
   return (
     <>
       <Header />
-      <nav>
-        <Link to="/home"> Home </Link>
-      </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home currentUser={currentUser}/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/bars" element={<BarList />} />
       </Routes>
