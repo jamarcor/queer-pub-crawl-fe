@@ -5,8 +5,9 @@ import "../App.css";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Maps from "./Maps"
 
-export default function Home() {
+export default function Home({ currentUser }) {
   return (
     <div>
       <Container>
@@ -28,8 +29,9 @@ export default function Home() {
               <Col md="auto"><Form.Check type="checkbox" label="Dance" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Dive" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Inclusive" /></Col>
-              <Col md="auto"><Form.Check type="checkbox" label="Dark room" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Sports" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Patio" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Drag" /></Col>
             </Row>
           </Form.Group>
           <Button variant="primary" type="submit">
@@ -37,6 +39,7 @@ export default function Home() {
           </Button>
         </Form>
       </Container>
+      <Maps />
     </div>
   );
 }

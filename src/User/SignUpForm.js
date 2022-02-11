@@ -68,33 +68,3 @@ function SignUpForm({ setCurrentUser, currentUser }) {
 }
 
 export default SignUpForm;
-
-{
-  /* <div style={formDivStyle}>
-<h1>Sign Up</h1>
-<Form className="ui form" onSubmit={handleSubmit}>
-  <div className="field">
-    <label>Username</label>
-    <input
-      value={username}
-      onChange={handleUsernameChange}
-      type="text"
-      placeholder="username"
-    />
-  </div>
-  <div className="field">
-    <label>Password</label>
-    <input
-      value={password}
-      onChange={handlePasswordChange}
-      type="password"
-      placeholder="password"
-    />
-  </div>
-
-  <Button variant="primary" className="standard-button" type="submit">
-    Submit
-  </Button>
-</Form>
-</div> */
-}

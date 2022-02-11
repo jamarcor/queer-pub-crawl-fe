@@ -26,11 +26,24 @@
   color: #09d3ac;
 }
 
-#map { height: 180px; }
+/* #map { 
+  height: 100vh; 
+  width: 50%;
+} */
 
 .leaflet-container {
-  width: 100vw;
-  height: 50vh;
+  width: 75%;
+  height: 100vh;
+  
+}
+
+/* .popup {
+  background-color: #282c34;
+} */
+
+.map-bar-pic {
+  max-width: 75px;
+  max-height: 75px;
 }
 
 #signup-form {
