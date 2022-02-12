@@ -56,7 +56,7 @@ function SignUpForm({ setCurrentUser, currentUser }) {
             value={password}
             onChange={handlePasswordChange}
             type="password"
-            placeholder="password"
+            placeholder="Password"
           />
         </Form.Group>
         <Button variant="primary" className="standard-button" type="submit">

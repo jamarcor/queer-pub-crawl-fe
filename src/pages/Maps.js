@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import "../App.css";
-
+// import rainbowPin from "../img/rainbow-pin.png";
+import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-export default function Maps() {
-  const [bars, setBars] = useState([]);
+export default function Maps({ mapFilter, bars, setBars }) {
+  // const [bars, setBars] = useState([]);
   const [activeBar, setActiveBar] = React.useState(null);
-
+  // console.log(mapFilter)
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -17,16 +19,28 @@ export default function Maps() {
         setBars(r);
         console.log("bars is: ", bars);
       });
-  }, []);
+  }, [bars, setBars]);
+
+ const icon = L.icon({
+  iconUrl: require("../img/rainbow-pin.png"),
+  iconSize: [30, 40],
+  // iconAnchor: [22, 94],
+  // popupAnchor: [-3, -76],
+ })
 
   return (
+    <Container>
+      <Col>
     <MapContainer center={[37.7561, -122.4326]} zoom={13}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url='https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
       />
-      {bars.map((bar) => (
+      {bars
+      .filter((bar) => bar.neighborhood.id == mapFilter)
+      .map((bar) => (
         <Marker
+          icon={icon}
           key={bar.id}
           position={[bar.latitude, bar.longitude]}
           eventHandlers={{
@@ -35,7 +49,8 @@ export default function Maps() {
             },
           }}
         />
-      ))}
+      )
+      )}
 
       {activeBar && (
         <Popup
@@ -56,35 +71,7 @@ export default function Maps() {
         </Popup>
       )}
     </MapContainer>
+    </Col>
+    </Container>
   );
 }
-
-// key={bars.bar_id}
-//         position={[
-//           bars.logitude,
-//           bars.latitude
-//         ]}>
-//           onClick={() => {
-//             setActiveBar(bars);
-//           }}
-
-// return <div>
-//     <MapContainer center={[37.7561, -122.4326 ]} zoom={13}>
-//         <TileLayer
-//           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-//           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-//         />
-//         <Marker position={[37.7561, -122.4326]}>
-//           <Popup>
-//             A pretty CSS3 popup. <br /> Easily customizable.
-//           </Popup>
-//         </Marker>
-//       </MapContainer>
-//   </div>;
-
-// Neighborhood
-// var polygon = L.polygon([
-//   [51.509, -0.08],
-//   [51.503, -0.06],
-//   [51.51, -0.047]
-// ]).addTo(map);

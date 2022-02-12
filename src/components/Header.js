@@ -23,9 +23,9 @@ function Header({ currentUser }) {
             <Nav.Item as="li">
               <Nav.Link href="/bars">Bar List</Nav.Link>
             </Nav.Item>
-            <Nav.Item as="li">
+            {/* <Nav.Item as="li">
               <Nav.Link eventKey="link-2">Resources</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Col>
       </Row>

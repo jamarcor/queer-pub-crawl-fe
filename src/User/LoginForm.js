@@ -48,7 +48,7 @@ function LoginForm({ setCurrentUser, currentUser }) {
             value={username}
             onChange={handleUsernameChange}
             type="text"
-            placeholder="username"
+            placeholder="Username"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="login-password">
@@ -57,7 +57,7 @@ function LoginForm({ setCurrentUser, currentUser }) {
             value={password}
             onChange={handlePasswordChange}
             type="password"
-            placeholder="password"
+            placeholder="Password"
           />
         </Form.Group>
         <Button variant="primary" className="standard-button" type="submit">

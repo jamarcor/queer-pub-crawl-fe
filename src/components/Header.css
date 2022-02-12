@@ -2,5 +2,15 @@
     /* background-color: aqua; */
     border: 0;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
+#nav a {
+    color: #222;
+    font-size: 16px;
+    font: Arial, non-serif;
+}
+
+#nav > div {
+    padding: 0;
+}
