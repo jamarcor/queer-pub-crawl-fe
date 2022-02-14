@@ -5,6 +5,7 @@ import Auth from "./User/Auth";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import BarList from "./components/BarList";
+import BarProfile from "./pages/BarProfile";
 import "./App.css";
 import Maps from "./pages/Maps"
 const url = "http://localhost:3000/";
@@ -42,7 +43,8 @@ function App() {
         <Route path="/home" element={<Home currentUser={currentUser}/>} />
         <Route path="/maps" element={<Maps currentUser={currentUser}/>} />
         <Route path="/home" element={<Home />} />
-        <Route path="/bars" element={<BarList />} />
+        <Route path="/bars" element={<BarList />}/>
+        <Route path="/bars/:id" element={<BarProfile currentUser={currentUser}/>}/>
       </Routes>
     </>
   

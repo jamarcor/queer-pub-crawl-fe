@@ -1,19 +1,31 @@
 import React, { useEffect, useState } from "react";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import BarCard from "./BarCard";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
+import { Row, Container, Button } from "react-bootstrap";
 
  function BarList() {
   const [bars, setBars] = useState([]);
+  const { id } = useParams();
+  const[currentBar, setCurrentBar] = useState({});
 
   useEffect(() => {
     fetch("http://localhost:3000/bar-listing")
       .then((r) => r.json())
       .then((r) => {
-        console.log("response is: ", r);
+        // console.log("response is: ", r);
         setBars(r);
-        console.log("bars is: ", bars);
+        // console.log("bars is: ", bars);
       });
+  }, []);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/bars/${id}`)
+    .then((r) => r.json())
+    .then((bar) => {
+      console.log(bar);
+      setCurrentBar(bar);
+    }) 
+    .catch((error) => {console.log(error)})
   }, []);
 
   return (
@@ -24,9 +36,11 @@ import Container from "react-bootstrap/Container";
         { bars.length > 0 ? (
           bars.map(bar => {
             return (
-              <>
-            <BarCard key={bar.bar_id} bar={bar} neighborhood={bar.neighborhood.name} />
-            </>
+              <div key={bar.id}>
+              <Link to={`/bars/${bar.id}`}>
+            <BarCard bar={bar} neighborhood={bar.neighborhood.name} />
+            </Link>
+            </div>
             )
           })
         ) : null }

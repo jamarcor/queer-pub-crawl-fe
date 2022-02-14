@@ -6,6 +6,7 @@ import Maps from "./Maps"
 export default function Home({ currentUser }) {
   const [bars, setBars] = useState([]);
   const [mapFilter, setMapFilter] = useState(null);
+  // cont [categoryFilter, setCategoryFilter] = useState(null);
 
   useEffect(() => {
     // const abortController = new AbortController();
@@ -23,6 +24,8 @@ function handleSelectChange(e){
   setMapFilter(e.target.value);
 }
 
+
+
   return (
     <div>
       <Container>
@@ -39,7 +42,7 @@ function handleSelectChange(e){
                 {/* <option>All</option> */}
               </Form.Select>
           </Form.Group>
-          {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Row>
               <Col md="auto"><Form.Check type="checkbox" label="Dance" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Dive" /></Col>
@@ -48,7 +51,7 @@ function handleSelectChange(e){
               <Col md="auto"><Form.Check type="checkbox" label="Patio" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Drag" /></Col>
             </Row>
-          </Form.Group> */}
+          </Form.Group>
           {/* <Button variant="primary" type="submit">
             Submit
           </Button> */}
