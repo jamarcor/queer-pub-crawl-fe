@@ -5,7 +5,8 @@ import Maps from "./Maps"
 
 export default function Home({ currentUser }) {
   const [bars, setBars] = useState([]);
-  const [mapFilter, setMapFilter] = useState(null);
+  const [mapFilter, setMapFilter] = useState("all");
+  const [categories, setCategories] = useState([]);
   // cont [categoryFilter, setCategoryFilter] = useState(null);
 
   useEffect(() => {
@@ -24,6 +25,9 @@ function handleSelectChange(e){
   setMapFilter(e.target.value);
 }
 
+function handleCategoryClick(e){
+
+}
 
 
   return (
@@ -35,11 +39,11 @@ function handleSelectChange(e){
               <Form.Label>Neighborhood Select</Form.Label>
               <Form.Select onChange={handleSelectChange}
               defaultValue="Neighborhood">
+                <option value="all">All</option>
                 <option value={1}>Castro</option>
                 <option value={2}>SoMa</option>
                 <option value={3}>North of Market</option>
                 <option value={4}>The Mission</option>
-                {/* <option>All</option> */}
               </Form.Select>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">

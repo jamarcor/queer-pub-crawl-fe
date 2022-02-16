@@ -19,7 +19,7 @@ export default function Maps({ mapFilter, bars, setBars }) {
         setBars(r);
         console.log("bars is: ", bars);
       });
-  }, [bars, setBars]);
+  }, []);
 
  const icon = L.icon({
   iconUrl: require("../img/rainbow-pin.png"),
@@ -27,6 +27,9 @@ export default function Maps({ mapFilter, bars, setBars }) {
   // iconAnchor: [22, 94],
   // popupAnchor: [-3, -76],
  })
+
+// const filterNeighborhoods = bars.filter((bar) => bar.neighborhood.id == mapFilter);
+
 
   return (
     <Container>
@@ -37,7 +40,8 @@ export default function Maps({ mapFilter, bars, setBars }) {
         url='https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
       />
       {bars
-      .filter((bar) => bar.neighborhood.id == mapFilter)
+      // .filterNeighborhoods
+      .filter((bar) => bar.neighborhood.id == mapFilter || mapFilter === "all")
       .map((bar) => (
         <Marker
           icon={icon}
