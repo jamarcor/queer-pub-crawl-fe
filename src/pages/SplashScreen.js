@@ -8,8 +8,7 @@ export default function SplashScreen() {
       <Row>
         <Row>
           <Col xs={10} className="splash-text-center">
-            <h1>Hello</h1>
-            <h4>World</h4>
+            <p>Hello World</p>
           </Col>
           <Col xs={6}>
             <div className='splash-image'>

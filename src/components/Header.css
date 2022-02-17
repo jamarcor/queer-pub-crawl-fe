@@ -3,12 +3,17 @@
     border: 0;
     margin-bottom: 30px;
     margin-top: 20px;
+    z-index: 10;
 }
 
 #nav a {
     color: #222;
     font-size: 16px;
     font: Arial, non-serif;
+}
+
+#nav a:hover {
+    color: orange;
 }
 
 #nav > div {

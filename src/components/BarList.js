@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import BarCard from "./BarCard";
-import { Row, Container, Button } from "react-bootstrap";
+import { Row, Container, Button, CardGroup} from "react-bootstrap";
 
 function BarList() {
   const [bars, setBars] = useState([]);
@@ -36,6 +36,7 @@ function BarList() {
     <>
       <Container>
         <Row xs={10} className="g-4" className="d-flex justify-content-center">
+          <CardGroup>
           {bars.length > 0
             ? bars.map((bar) => {
                 return (
@@ -47,6 +48,7 @@ function BarList() {
                 );
               })
             : null}
+          </CardGroup>
         </Row>
       </Container>
     </>

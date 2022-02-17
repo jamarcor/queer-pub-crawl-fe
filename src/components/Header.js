@@ -1,10 +1,22 @@
 import React from "react";
 import { Nav, Navbar, Container, Col, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "./Header.css";
 import "../img/fruit_loop_logo.png";
 
-function Header({ currentUser }) {
+function Header({ currentUser, setCurrentUser }) {
+
+  let navigate = useNavigate();
+
+  function handleLogout() {
+    localStorage.removeItem("token");
+    navigate("/");
+    setCurrentUser({});
+  }
+
+
+
   return (
     <div id="nav">
       <Container>
@@ -20,6 +32,9 @@ function Header({ currentUser }) {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Nav.Link href="/bars">Bar List</Nav.Link>
+                </Nav.Item>
+                <Nav.Item as="li">
+                  <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
                 </Nav.Item>
                 {/* <Nav.Item as="li">
               <Nav.Link eventKey="link-2">Resources</Nav.Link>
