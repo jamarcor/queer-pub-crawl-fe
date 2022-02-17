@@ -40,7 +40,6 @@ export default function Maps({ mapFilter, bars, setBars }) {
         url='https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
       />
       {bars
-      // .filterNeighborhoods
       .filter((bar) => bar.neighborhood.id == mapFilter || mapFilter === "all")
       .map((bar) => (
         <Marker

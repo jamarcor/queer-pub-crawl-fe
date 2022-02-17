@@ -26,6 +26,7 @@
   color: #09d3ac;
 }
 
+
 /* #map { 
   height: 100vh; 
   width: 50%;
@@ -64,4 +65,21 @@
   margin-bottom: 50px;
   padding-left: 75px;
   padding-right: 75px;
+}
+
+.splash-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  
+}
+
+.splash-page {
+  z-index: 20;
+}
+
+.splash-text-center {
+  z-index: 20;
+  text-align: center;
 }

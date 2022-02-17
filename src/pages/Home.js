@@ -25,9 +25,9 @@ function handleSelectChange(e){
   setMapFilter(e.target.value);
 }
 
-function handleCategoryClick(e){
+// function handleCategoryClick(e){
 
-}
+// }
 
 
   return (
@@ -54,6 +54,12 @@ function handleCategoryClick(e){
               <Col md="auto"><Form.Check type="checkbox" label="Sports" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Patio" /></Col>
               <Col md="auto"><Form.Check type="checkbox" label="Drag" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Bear" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Twink" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Lesbian" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Queer" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Events" /></Col>
+              <Col md="auto"><Form.Check type="checkbox" label="Historic" /></Col>
             </Row>
           </Form.Group>
           {/* <Button variant="primary" type="submit">

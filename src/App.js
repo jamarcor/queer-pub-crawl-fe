@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import BarList from "./components/BarList";
 import BarProfile from "./pages/BarProfile";
+import Splash from "./pages/SplashScreen";
 import "./App.css";
 import Maps from "./pages/Maps"
 const url = "http://localhost:3000/";
@@ -38,7 +39,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home currentUser={currentUser}/>} />
+        <Route path="/" element={<Splash currentUser={currentUser}/>} />
         <Route path="/login" element={<Auth setCurrentUser={setCurrentUser} currentUser={currentUser} />} />
         <Route path="/home" element={<Home currentUser={currentUser}/>} />
         <Route path="/maps" element={<Maps currentUser={currentUser}/>} />
