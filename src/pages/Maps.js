@@ -23,7 +23,7 @@ export default function Maps({ mapFilter, bars, setBars }) {
 
  const icon = L.icon({
   iconUrl: require("../img/rainbow-pin.png"),
-  iconSize: [30, 40],
+  iconSize: [25, 35],
   // iconAnchor: [22, 94],
   // popupAnchor: [-3, -76],
  })
@@ -37,7 +37,7 @@ export default function Maps({ mapFilter, bars, setBars }) {
     <MapContainer center={[37.7561, -122.4326]} zoom={13}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url='https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
+        url='https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg'
       />
       {bars
       .filter((bar) => bar.neighborhood.id == mapFilter || mapFilter === "all")

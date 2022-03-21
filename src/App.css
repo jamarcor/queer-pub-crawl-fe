@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fff1e6;
+  background-color: #fee440;
 }
 
 .App {
@@ -116,12 +116,14 @@ body {
   border-radius: 0;
   border: 3px #222;
   max-width: 450px;
+  background-color: #f15bb5;
 }
 
 #signup-form button {
+  font-weight: 600;
   border-radius: 0;
-  background-color: #222;
-  color: #ddd;
+  background-color: #00bbf9;
+  color: #222;
   border-color: #222;
   font-size: 18px;
   font-weight: 300px;
@@ -129,19 +131,47 @@ body {
 
 #login-form {
   max-width: 450px;
+  
 }
 
 #login-form input {
   border-radius: 0;
   border: 3px #222;
   max-width: 450px;
+  background: #f15bb5;
 }
 
 #login-form button {
+  font-weight: 600;
   border-radius: 0;
-  background-color: #222;
-  color: #ddd;
+  background-color: #00bbf9;
+  color: #222;
   border-color: #222;
   font-size: 18px;
   font-weight: 300px;
+}
+
+#uncontrolled-tab-example-tab-signup{
+  /* background-color: #f15bb5; */
+  font-weight: 900px;
+  color:#f15bb5;
+  border-color:#f15bb5
+}
+#uncontrolled-tab-example-tab-login{
+  /* background-color: #f15bb5; */
+  font-weight: 900px;
+  color:#f15bb5;
+  border-color: #f15bb5;
+  /* padding: 1; */
+}
+
+.reviewSubmit {
+  text-align: center;
+  background-color: #f15bb5;
+  border-radius: 2;
+  border-color: #fff;
+}
+
+.reviewSubmitButton {
+  background-color: #00bbf9;
 }

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
+import { Form, Button} from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function SignUpForm({ setCurrentUser, currentUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  let navigate = useNavigate();
 
   const handleUsernameChange = (evt) => {
     setUsername(evt.target.value);
@@ -36,6 +36,7 @@ function SignUpForm({ setCurrentUser, currentUser }) {
       });
     setUsername("");
     setPassword("");
+    navigate("/home")
   };
 
   return (
@@ -47,7 +48,7 @@ function SignUpForm({ setCurrentUser, currentUser }) {
             value={username}
             onChange={handleUsernameChange}
             type="text"
-            placeholder="Username"
+            placeholder="Tracy Martel?"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="signup-password">
@@ -56,7 +57,7 @@ function SignUpForm({ setCurrentUser, currentUser }) {
             value={password}
             onChange={handlePasswordChange}
             type="password"
-            placeholder="Password"
+            placeholder="What's the T?"
           />
         </Form.Group>
         <Button variant="primary" className="standard-button" type="submit">

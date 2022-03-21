@@ -15,6 +15,7 @@ export default function BarCard({ bar }) {
           <Card.Text>{bar.street_address}</Card.Text>
           {/* <Card.Text>{bar.description}</Card.Text> */}
           {/* <Card.Text>{bar.bar_url}</Card.Text> */}
+          {/* <Card.Text>{console.log(bar.bar_categories.category_id)}</Card.Text> */}
           <Card.Text>{bar.neighborhood.name}</Card.Text>
         </Card.Body>
       </Card>

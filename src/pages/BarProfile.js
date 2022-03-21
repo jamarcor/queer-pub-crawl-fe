@@ -61,14 +61,14 @@ export default function BarProfile({ currentUser }) {
 
   return (
     <>
-      <Row>
+      <Row  xs={6}>
         { !reviewSubmitted ? (
            <Form onSubmit={handleSubmit}>
-            <Form.Group>
+            <Form.Group className="reviewSubmit">
               <Form.Label>Submit Review</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
-            <Button type="submit">Submit</Button>
+            <Button className="reviewSubmitButton"type="submit">Submit</Button>
           </Form>)
           : (
             <p>Review Submitted</p>

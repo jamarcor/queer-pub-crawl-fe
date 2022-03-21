@@ -13,9 +13,17 @@
 }
 
 #nav a:hover {
-    color: orange;
+    color: #00bbf9;
 }
 
 #nav > div {
     padding: 0;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute; right:-120px;
+    z-index: 0;
+    /* transform: scaleX(-1); */
 }
